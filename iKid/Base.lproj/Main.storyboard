@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5QS-Bn-gve">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Good-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZK-4w-trv">
+                                <rect key="frame" x="264" y="465" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="flipJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZa-gb-quH"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good_answer" translatesAutoresizingMaskIntoConstraints="NO" id="EQd-gf-E29">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Hnh-lI-w1Q"/>
+                                    <constraint firstAttribute="width" constant="240" id="y8s-VS-5h3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good_question" translatesAutoresizingMaskIntoConstraints="NO" id="Y4k-50-Yjp">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1d1-Br-m4Q"/>
+                                    <constraint firstAttribute="width" constant="240" id="vRA-Vg-7gO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y4k-50-Yjp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6P2-c0-Twk"/>
+                            <constraint firstItem="Y4k-50-Yjp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Gb-SA-G93"/>
+                            <constraint firstItem="Y4k-50-Yjp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GJM-56-4nc"/>
+                            <constraint firstItem="EQd-gf-E29" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IwF-3u-THr"/>
+                            <constraint firstItem="EQd-gf-E29" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MY7-Dl-URZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YZK-4w-trv" secondAttribute="bottom" constant="24" id="N72-OI-Sto"/>
+                            <constraint firstItem="Y4k-50-Yjp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QhS-lB-x0t"/>
+                            <constraint firstItem="Y4k-50-Yjp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S1Q-8p-M78"/>
+                            <constraint firstItem="YZK-4w-trv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Whb-Jr-pgC"/>
+                            <constraint firstItem="Y4k-50-Yjp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iDU-PZ-I5G"/>
+                            <constraint firstItem="EQd-gf-E29" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k92-Nk-HIs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YZK-4w-trv" secondAttribute="trailing" constant="24" id="wx3-Yf-bVs"/>
+                            <constraint firstItem="EQd-gf-E29" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zPs-tf-MQE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" id="DPk-Ph-l42"/>
+                    <connections>
+                        <outlet property="answerImage" destination="EQd-gf-E29" id="sYW-PY-Mp1"/>
+                        <outlet property="questionImage" destination="Y4k-50-Yjp" id="gaB-h7-nQs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="133"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="ggk-ze-pQA">
+            <objects>
+                <viewController id="Eeq-p3-6d7" customClass="PunViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E3B-XB-Jeb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock, knock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ov-Rp-4va">
+                                <rect key="frame" x="108" y="273.5" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daA-qx-3rN">
+                                <rect key="frame" x="264" y="465" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="flipJoke:" destination="ZyX-be-OtL" eventType="touchUpInside" id="40M-RO-auo"/>
+                                    <action selector="flipJoke:" destination="Eeq-p3-6d7" eventType="touchUpInside" id="pEM-oJ-j4M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1ov-Rp-4va" firstAttribute="centerX" secondItem="E3B-XB-Jeb" secondAttribute="centerX" id="Mhy-ZT-H1t"/>
+                            <constraint firstItem="1ov-Rp-4va" firstAttribute="centerY" secondItem="E3B-XB-Jeb" secondAttribute="centerY" id="Vod-uL-9yO"/>
+                            <constraint firstItem="Msr-4k-cJI" firstAttribute="bottom" secondItem="daA-qx-3rN" secondAttribute="bottom" constant="24" id="aqN-VB-Zuf"/>
+                            <constraint firstItem="Msr-4k-cJI" firstAttribute="trailing" secondItem="daA-qx-3rN" secondAttribute="trailing" constant="24" id="k0F-yg-pQi"/>
+                            <constraint firstItem="daA-qx-3rN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="E3B-XB-Jeb" secondAttribute="leading" constant="20" symbolic="YES" id="wVr-z8-07z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Msr-4k-cJI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" id="omF-79-wlX"/>
+                    <connections>
+                        <outlet property="label" destination="1ov-Rp-4va" id="eEQ-zD-rjQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpD-Se-p1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZyX-be-OtL" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="133"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="xSV-n1-w8S">
+            <objects>
+                <viewController id="3DH-54-0Ds" customClass="DadViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jgr-6v-wxk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to build an ark?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rb-Vx-CQB">
+                                <rect key="frame" x="79" y="273.5" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmO-vd-sam">
+                                <rect key="frame" x="264" y="465" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="flipJoke:" destination="3DH-54-0Ds" eventType="touchUpInside" id="Q1h-MQ-eEQ"/>
+                                    <action selector="flipJoke:" destination="66o-QE-6qe" eventType="touchUpInside" id="fkm-y1-C6f"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dad" translatesAutoresizingMaskIntoConstraints="NO" id="C8X-Xp-FYk">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5BG-we-wL2"/>
+                                    <constraint firstAttribute="width" constant="240" id="WVe-jH-aWk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rmO-vd-sam" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jgr-6v-wxk" secondAttribute="leading" constant="20" symbolic="YES" id="8Xb-KM-9uB"/>
+                            <constraint firstItem="UdS-HN-7Yd" firstAttribute="trailing" secondItem="rmO-vd-sam" secondAttribute="trailing" constant="24" id="CTl-iU-zUD"/>
+                            <constraint firstItem="6Rb-Vx-CQB" firstAttribute="centerY" secondItem="Jgr-6v-wxk" secondAttribute="centerY" id="MSC-zz-0dt"/>
+                            <constraint firstItem="C8X-Xp-FYk" firstAttribute="centerY" secondItem="Jgr-6v-wxk" secondAttribute="centerY" id="l9o-Bx-53Q"/>
+                            <constraint firstItem="6Rb-Vx-CQB" firstAttribute="centerX" secondItem="Jgr-6v-wxk" secondAttribute="centerX" id="lDT-af-S22"/>
+                            <constraint firstItem="C8X-Xp-FYk" firstAttribute="centerX" secondItem="Jgr-6v-wxk" secondAttribute="centerX" id="oom-g3-eGw"/>
+                            <constraint firstItem="UdS-HN-7Yd" firstAttribute="bottom" secondItem="rmO-vd-sam" secondAttribute="bottom" constant="24" id="xga-Em-RBS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UdS-HN-7Yd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" id="KJn-lW-IN6"/>
+                    <connections>
+                        <outlet property="image" destination="C8X-Xp-FYk" id="vc4-Mm-3Y1"/>
+                        <outlet property="label" destination="6Rb-Vx-CQB" id="adk-pf-r5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VM8-SL-Sxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="66o-QE-6qe" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="132.68365817091455"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eoZ-Er-Xnm">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5QS-Bn-gve" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YE6-mV-xwr">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="06N-XS-3Xq"/>
+                        <segue destination="Eeq-p3-6d7" kind="relationship" relationship="viewControllers" id="Nlp-rq-LiO"/>
+                        <segue destination="3DH-54-0Ds" kind="relationship" relationship="viewControllers" id="EeB-Es-flN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vn7-bh-B5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163.19999999999999" y="133.13343328335833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dad" width="676" height="284"/>
+        <image name="good_answer" width="490" height="314"/>
+        <image name="good_question" width="490" height="285"/>
+    </resources>
+</document>
